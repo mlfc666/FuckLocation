@@ -4,6 +4,7 @@ import android.app.Application
 import android.content.Context
 
 class MyApplication : Application() {
+    // static
     companion object {
         lateinit var appContext: Context
     }
