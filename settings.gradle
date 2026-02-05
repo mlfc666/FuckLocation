@@ -3,8 +3,13 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url "https://jitpack.io" }
-        jcenter() // Warning: this repository is going to shut down soon
+        jcenter()
+        // --- 添加以下内容 ---
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://api.xposed.info/' }
+        maven { url 'https://s01.oss.sonatype.org/content/repositories/releases/' }
+
+        // ------------------
     }
 }
 rootProject.name = "FuckLocation"
